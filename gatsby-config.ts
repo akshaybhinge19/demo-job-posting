@@ -9,7 +9,9 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: [{
+  plugins: [
+    "gatsby-transformer-remark",
+    {
     resolve: 'gatsby-source-contentful',
     options: {
       "accessToken": "wCpIADLE8-LcuefTGQhi6GijEkhbCACI7xmyli6nsVw",
@@ -34,7 +36,16 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "jobs",
+      "path": "./src/jobs/"
+    },
+    __key: "jobs"
+  }
+]
 };
 
 export default config;
