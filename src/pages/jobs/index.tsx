@@ -174,7 +174,7 @@ const JobsPage: React.FC<IJobsPageProps> = ({ data }) => {
 
 export const jobsQuery = graphql`
   query jobsQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { slug: { ne: null } } }) {
       nodes {
         frontmatter {
           title

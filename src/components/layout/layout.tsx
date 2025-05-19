@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React from "react";
+import React, { useEffect } from "react";
 import FooterSection from "./footer-section";
 import NavHeader from "./nav-header";
 
@@ -11,11 +11,13 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
-  AOS.init({
-    // duration: 1000,
-    offset: 5,
-    // once: true,
-  });
+  useEffect(() => {
+    AOS.init({
+      offset: 5,
+      // duration: 1000,
+      // once: true,
+    });
+  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <NavHeader />
