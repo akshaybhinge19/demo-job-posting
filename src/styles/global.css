@@ -1,1 +1,195 @@
 @import "tailwindcss";
+
+
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.prose h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.prose h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.prose h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.prose p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+  font-style: italic;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose pre {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose code {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose pre code {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose table {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.prose th {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.prose td {
+  margin-bottom: 0.5rem;
+}
+
+.prose img {
+  margin-bottom: 1rem;
+}
+
+.prose hr {
+  margin-bottom: 1rem;
+}
+
+.prose a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  text-decoration: none;
+}
+
+.prose figure {
+  margin-bottom: 1rem;
+}
+
+.prose figcaption {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.prose figure img {
+  margin-bottom: 0;
+}
+
+.prose figure figcaption {
+  margin-bottom: 1rem;
+}
+
+.prose iframe {
+  margin-bottom: 1rem;
+}
+
+.prose video {
+  margin-bottom: 1rem;
+}
+
+.prose audio {
+  margin-bottom: 1rem;
+}
+
+.prose input {
+  margin-bottom: 1rem;
+}
+
+.prose textarea {
+  margin-bottom: 1rem;
+}
+
+.prose button {
+  margin-bottom: 1rem;
+}
+
+.prose select {
+  margin-bottom: 1rem;
+}
+
+.prose label {
+  margin-bottom: 1rem;
+}
+
+.prose fieldset {
+  margin-bottom: 1rem;
+}
+
+.prose legend {
+  margin-bottom: 0.5rem;
+}
+
+.prose details {
+  margin-bottom: 1rem;
+}
+
+.prose summary {
+  margin-bottom: 0.5rem;
+}
+
+.prose details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+.prose details[open] summary ~ * {
+  margin-top: 0.5rem;
+}
+
+.prose details[open] summary:first-of-type {
+  margin-top: 1rem;
+}
+
+.prose details[open] summary:last-of-type {
+  margin-bottom: 1rem;
+}

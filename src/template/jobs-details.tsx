@@ -64,7 +64,9 @@ const JobDetailPage: React.FC<JobDetailProps> = ({ data }) => {
               </div>
 
               <div className="border-t border-gray-200 pt-6">
-                <div dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="prose prose-indigo max-w-none">
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
+                </div>
               </div>
 
               <div className="mt-8 border-t border-gray-200 pt-6">

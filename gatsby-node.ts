@@ -9,7 +9,7 @@ export const createPages = async ({ graphql, actions }: CreatePagesContext) => {
   async function getAllJobs() {
     const jobs = await graphql(`
       query jobs {
-        allMarkdownRemark {
+        allMarkdownRemark(filter: { frontmatter: { slug: { ne: null } } }) {
           nodes {
             frontmatter {
               slug
@@ -30,7 +30,7 @@ export const createPages = async ({ graphql, actions }: CreatePagesContext) => {
       path: `/jobs/${job.frontmatter.slug}`,
       component: path.resolve("./src/template/jobs-details.tsx"),
       context: {
-        id: job.frontmatter.slug,
+        slug: job.frontmatter.slug,
       },
     });
   });
